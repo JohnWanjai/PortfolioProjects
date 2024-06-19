@@ -7,6 +7,7 @@ where percentage_laid_off = 1
 
 order by total_laid_off desc;
 
+
 select company, sum(total_laid_off) from layoff_staging2 -- Companies with the most layoffs, Amazon, Google, Meta leading
 group by company
 order by 2 desc;
